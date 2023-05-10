@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@200;300;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    background-color: #2b2b2b;
+}
+.navbar {
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navbar-brand {
+    color: #fff;
+}
+.navbar-brand:hover {
+    color:#c7c7c7;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #c7c7c7;
+}
+.link-active {
+    color:#c7c7c7;
+}
+
+/*
+-Show nav link padding only on desktop view.
+-Show nav links aligned left on mobile view (collapsed state).
+*/
+@media (min-width: 992px) {
+    nav li {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+/*Navbar Toggler*/
+.navbar-toggler {
+    border: none;
+}
+.custom-toggler {
+    font-size: 30px;
+    color: #fff;
+}
+.custom-toggler:hover {
+    color: #c7c7c7;
+}
+
+/*--------------------------------------------*/
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+#features {
+    text-align: left;
+}
+
+.hero {
+    background-color: #e6e6e6
+}
+
+
+.google-reviews {
+    text-decoration: none;
+    color: #474747
+}
+
+
+.team {
+    text-align: center;
+    padding-top: 2.5em;
+}
+
+.feature-container{
+    background-color: #474747;
+    width: 80%; 
+    height: 300px; 
+    border-radius: 21px 21px 0 0;
+}
+
+
+ .services-hero {
+    background-color: aqua;
+ }
+
+
+
+/* Our Services Hero image animation */
+
+#hero-outer{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image{
+    height:100%;
+    width: 100%;
+
+    /* Animates zoom effect on loading the page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* Creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+/*CrossFade Transitions (#cf) */
+#cf {
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+    
+  }
+  
+  #cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #cf img.top:hover {
+    opacity:0;
+  }
+
+ /*----*/ 
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*Carousel*/
+.hp-carousel img{
+    max-height: 85vh;
+}
+ 
+
+.carousel-caption {
+    background-color: rgba(71, 71, 71, 0.9);
+    max-width: fit-content;
+    padding: 1%;
+}
+
+.carousel-caption h1 {
+    color:#fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    color: #fff;
+}
+
+.carousel-control-prev {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: fit-content;
+    height: 50%;
+    top: 25%;
+}
+
+
+.carousel-control-next {
+    background-color: #fff;
+    width: fit-content;
+    height: 50%;
+    top: 25%;
+}
+
+
+
+/*Why Choose Us Photos*/
+
+
+.wcu-photo {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.wcu-photo img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.wcu-photo img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*---DESIGN PROCESS---*/
+
+#dp a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#dp a:hover {
+    color: #474747;
+}
+
+.number {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #474747;
+    color: #fff;
+    text-align: center;
+}
+
+/*Zoom Images Transition*/
+.zoom {
+    height: 250px;
+    width: 375px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.zoom img{
+    height: 250px;
+    width: 375px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.zoom img:hover {
+    transform: scale(1.1);
+}
+
+/*---------------------------------*/
+
+/*Recent Projects*/
+/*Gallery*/
+
+#gallery a {
+    cursor: zoom-in;
+}
+
+/*Team*/
+.profile-pic img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #474747;
+    align-self: center;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    
+    
+}
+
+
+footer {
+    font-family: "Lato", sans-serif;
+}

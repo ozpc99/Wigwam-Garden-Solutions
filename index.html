@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wigwam Garden Solutions</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/abda6128c4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<!--Header & Nav-->
+<header>
+  <nav class="navbar navbar-expand-lg mb-auto">
+    <div class="container-fluid">
+
+      <a class="navbar-brand text-center" href="index.html">
+        <h4>Wigwam</h4>
+        <h6>Garden Solutions</h6>
+      </a>
+
+      <a class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="custom-toggler"><i class="fas fa-bars"></i></span>
+      </a>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link link-active" href="index.html"><i class="fa-solid fa-campground"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html"><i class="fa-solid fa-trowel"></i> Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><i class="fa-solid fa-people-group"></i> About Us</a>
+          <li class="nav-item" id="contact">
+            <a class="nav-link" href="contact.html"><i class="fa-solid fa-pen-to-square"></i> Free Quote</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--Body-->
+
+<body>
+
+  <!--Carousel-->
+  <section class="hp-carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark" data-bs-ride="true">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/images/gdesigns.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="container">
+            <div class="carousel-caption text-start rounded-3">
+              <h1>Garden Design Solutions</h1>
+              <p>Redesign your garden with Wigwam.</p>
+              <p><a class="btn btn-dark" href="services.html#see-more">Find out More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/images/lawns.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="container">
+            <div class="carousel-caption rounded-3">
+              <h1>Revive Your Lawn</h1>
+              <p>Weekly Lawn Maintenance starts from just £25 / week</p>
+              <p><a class="btn btn-dark" href="services.html#our-services">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/patios.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="container">
+            <div class="carousel-caption text-end rounded-3">
+              <h1>Paving & Patios</h1>
+              <p>New range of Indian Sandstone now available!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev rounded-3" type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next rounded-3" type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!--Gallery-->
+
+  <div class="px-4 my-5 text-center">
+    <h1 class="display-6">Recent Projects</h1>
+    <p class="lead mb-4 border-bottom">A gallery of some of our recent work</p>
+    <div class="col-lg-6 mx-auto">
+    </div>
+  </div>
+
+  <section id="gallery">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+
+        <a href="#Modal1" data-bs-toggle="modal" data-bs-target="#Modal1">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/water-feature.jpg" alt="water feature">
+          </div>
+        </a>
+
+        <a href="#Modal2" data-bs-toggle="modal" data-bs-target="#Modal2">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/sandstone.jpg" alt="">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <a href="#Modal3" data-bs-toggle="modal" data-bs-target="#Modal3">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/decking.jpg" alt="decking">
+          </div>
+        </a>
+
+        <a href="#Modal4" data-bs-toggle="modal" data-bs-target="#Modal4">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/hazel-fence.jpg" alt="">
+          </div>
+        </a>
+
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+
+        <a href="#Modal5" data-bs-toggle="modal" data-bs-target="#Modal5">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/rockery.jpg" alt="">
+          </div>
+        </a>
+
+        <a href="#Modal6" data-bs-toggle="modal" data-bs-target="#Modal6">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/hottub.jpg" alt="">
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+
+        <a href="#Modal7" data-bs-toggle="modal" data-bs-target="#Modal7">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/block-paving.jpg" alt="">
+          </div>
+        </a>
+
+        <a href="#Modal8" data-bs-toggle="modal" data-bs-target="#Modal8">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/patio2.jpg" alt="">
+          </div>
+        </a>
+
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+
+        <a href="Modal9" data-bs-toggle="modal" data-bs-target="#Modal9">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/stairs.jpg" alt="stone steps">
+          </div>
+        </a>
+
+        <a href="#Modal10" data-bs-toggle="modal" data-bs-target="#Modal10">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/slate-path.jpg" alt="slate path">
+          </div>
+        </a>
+
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+
+        <a href="#Modal11" data-bs-toggle="modal" data-bs-target="#Modal11">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/patio-3.jpg" alt="grey patio">
+          </div>
+        </a>
+
+        <a href="#Modal12" data-bs-toggle="modal" data-bs-target="#Modal12">
+          <div class="zoom mb-4 rounded-3">
+            <img src="assets/images/hedge.jpg" alt="hedge revamp">
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MODALS-->
+  <!--Modal 1: Patio, Raised Beds & Water Feature VIDEO-->
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel1">Patio, Raised Beds & Water Feature
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Penrith</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <video class="ratio ratio-16x9 rounded-3" controls>
+            <source src="assets/videos/video-1.mp4" type="video/mp4">
+            Your browser does not support this video content.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 2: Indian Sandstone Paving-->
+  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel2">Indian Sandstone Paving
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Jesmond</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/sandstone.jpg" class="w-100 rounded-3" alt="indian sandstone paving">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 3: Decking VIDEO-->
+  <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel3">Decking
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Houghton-Le-Spring</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <video class="ratio ratio-16x9 rounded-3" controls>
+            <source src="assets/videos/video-2.mp4" type="video/mp4">
+            Your browser does not support this video content.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 4: Hazel Privacy Screen-->
+  <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel4">Hazel Privacy Screen
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Hexham</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/hazel-fence.jpg" class="w-100 rounded-3" alt="hazel privacy screen">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 5: Rockery / Water Garden-->
+  <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="ModalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel5">Rockery / Water Garden
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Sunderland</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/rockery.jpg" class="w-100 rounded-3" alt="rockery">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 6: Hot Tub Surround-->
+  <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel6">Hot Tub Surround
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Carlisle</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/hottub.jpg" class="w-100 rounded-3" alt="wooden hot tub surround">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 7: Block Paving & Raised Beds-->
+  <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="ModalLabel7" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel7">Block Paving & Raised Beds
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Darlington</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/block-paving.jpg" class="w-100 rounded-3" alt="block paving">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 8: Indian Sandstone Patio & Hazel Screen-->
+  <div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="ModalLabel8" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel8">Indian Sandstone Patio & Hazel Screen
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Blanchland</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/patio2.jpg" class="w-100 rounded-3" alt="indian sandstone patio">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 9: Crazy Paving Steps-->
+  <div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="ModalLabel9" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel9">Crazy Paving Steps (Before & After)
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Stanhope</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/stairs.jpg" class="w-100 rounded-3" alt="stone steps">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 10: Slate Path & Shrub Pruning-->
+  <div class="modal fade" id="Modal10" tabindex="-1" aria-labelledby="ModalLabel10" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel10">Slate Path & Shrub Pruning
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Alnwick</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/slate-path.jpg" class="w-100 rounded-3" alt="slate path">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 11: Charcoal Grey Patio-->
+  <div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="ModalLabel11" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel11">Charcoal Grey Patio
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> South Shields</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/patio-3.jpg" class="w-100 rounded-3" alt="charcoal grey patio">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal 12: Hedge Revamp-->
+  <div class="modal fade" id="Modal12" tabindex="-1" aria-labelledby="ModalLabel12" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel12">Hedge Revamp (Before & After)
+            <br>
+            <small><i class="fa-solid fa-location-dot"></i> Consett</small>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/hedge.jpg" class="w-100 rounded-3" alt="hedge revamp">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Areas We Cover-->
+  <div class="container-fluid px-4 my-5">
+    <div class="row">
+      <div class="col-md text-center pt-5">
+        <h1 class="display-6">Areas We Cover</h1>
+        <p class="lead mb-4 border-bottom">
+
+          We cover the entirety of the North-East and Cumbria.
+        </p>
+        <div class="ratio ratio-1x1">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MGRbV_02WQROO1OR9_ddtqSoAWn_Cdg&ehbc=2E312F"
+            class="rounded-3"></iframe>
+        </div>
+      </div>
+
+      <!--Testimonials-->
+      <div class="col-md pt-5">
+        <h1 class="display-6 text-center">Testimonials</h1>
+        <p class="lead mb-4 text-center border-bottom">
+          <a href="https://www.google.com" target="_blank" class="google-reviews">
+            View our Google Reviews
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </p>
+        </a>
+
+        <div class="pb-5">
+          <h3><i class="fa-solid fa-user"></i> John</h3>
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            My lawn has never looked so good. Thanks, Wigwam!
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+
+        <div class="text-end pb-5">
+          <h3>Jane <i class="fa-solid fa-user"></i></h3>
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            Wigwam did a stellar job of my fence. I'm the envy of the street!
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+
+        <div class="pb-5">
+          <h3><i class="fa-solid fa-building"></i> Valley View Apartments</h3>
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            Our tenants are over the moon with the new outdoor seating area!
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+
+        <div class="text-end pb-5">
+          <h3>Water's Edge Bar <i class="fa-solid fa-martini-glass-citrus"></i></h3>
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            We hired Wigwam to redesign our beer garden, it looks absolutely stunning and has boosted our takings.
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!--Footer-->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2023 Wigwam Garden Solutions</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://www.facebook.com" target="_blank">
+          <svg class="bi" width="24" height="24">
+            <use xlink:href="#facebook">
+            </use>
+          </svg><i class="fa-brands fa-facebook"></i></a></li>
+
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com" target="_blank">
+          <svg class="bi" width="24" height="24">
+            <use xlink:href="#instagram">
+            </use>
+          </svg><i class="fa-brands fa-instagram"></i></a></li>
+
+      <li class="ms-3"><a class="text-muted" href="https://www.pinterest.co.uk" target="_blank">
+          <svg class="bi" width="24" height="24">
+            <use xlink:href="#pinterest">
+            </use>
+          </svg><i class="fa-brands fa-pinterest"></i></a></li>
+    </ul>
+  </footer>
+</div>
+</div>
+</div>
+
+</html>
