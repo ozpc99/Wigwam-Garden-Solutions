@@ -376,10 +376,36 @@ s
 
 ## Automated Testing
 
-## WC3 HTML Validator
+## [WC3 HTML Markup Validator](https://validator.w3.org/)
+
+### index.html
+The Home Page (index.html) passed the W3C HTML Validation Check with: NO ERRORS.
+
+![index.html-w3c-html-validator](/documents/screenshots/index.html-w3c-validator.png "index.html W3C HTML Validator")
 
 
-## Jigsaw CSS Validator
+### services.html
+The Our Services Page (services.html) passed the W3C HTML Validation Check with: NO ERRORS.
+
+![services.html-w3c-html-validator](/documents/screenshots/services.html-w3c-validator.png "services.html W3C HTML Validator")
+
+### about.html
+The About Us Page (about.html) passed the W3C HTML Validation Check with: NO ERRORS.
+
+![about.html-w3c-html-validator](/documents/screenshots/about.html-w3c-validator.png "about.html W3C HTML Validator")
+
+### contact.html
+The Free Quote / Contact Us Page (contact.html) passed the W3C HTML Validation Check with: NO ERRORS.
+
+![contact.html-w3c-html-validator](/documents/screenshots/contact.html-w3c-validator.png "contact.html W3C HTML Validator")
+
+## [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+### style.css
+
+The stylesheet (style.css) passed the W3C CSS Jigsaw Validation Check with: NO ERRORS.
+
+![style.css-jigsaw-validator](/documents/screenshots/style.css-jigsaw-validator.png "style.css W3C CSS Jigsaw Validator")
 
 
 # Bugs
@@ -458,7 +484,7 @@ The website is now fully responsive across a range of viewports including mobile
 
 On certain mobile devices, the image carousel caption on (index.html) was not resizing responsively causing the caption and its text to be cut off.
 
-![samsung-galaxy-s8+-bug](/documents/screenshots/samsung-galaxy-s8%2B-bug.png "Samsung Galaxy S8+ Bug")
+![samsung-galaxy-s8+-bug](/documents/screenshots/bugs/samsung-galaxy-s8-bug.png "Samsung Galaxy S8+ Bug")
 
 ### Bug Fixed: 16/05/2023 11:30am
 
@@ -467,7 +493,7 @@ Doing this makes it fully responsive across all screen sizes.
 
 This resulted in the bug being fixed:
 
-![samsung-galaxy-s8+-bug-fixed](/documents/screenshots/samsung-galaxy-s8%2B-bug-fixed.png "samsung-galaxy-s8+-bug-fixed")
+![samsung-galaxy-s8+-bug-fixed](/documents/screenshots/bugs/samsung-galaxy-s8-bug-fixed.png "samsung-galaxy-s8+-bug-fixed")
 
 ## 7) Bug Found: 16/05/2023 11:35am
 

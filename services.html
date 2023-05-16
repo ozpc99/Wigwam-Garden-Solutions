@@ -20,41 +20,39 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<!--Header & Nav-->
-<header>
-  <nav class="navbar navbar-expand-lg mb-auto">
-    <div class="container-fluid">
+<body>
+  <!--Header & Nav-->
+  <header>
+    <nav class="navbar navbar-expand-lg mb-auto">
+      <div class="container-fluid">
 
-      <a class="navbar-brand text-center" href="index.html">
-        <h4>Wigwam</h4>
-        <h6>Garden Solutions</h6>
-      </a>
+        <a class="navbar-brand text-center" href="index.html">
+          <h4>Wigwam</h4>
+          <h6>Garden Solutions</h6>
+        </a>
 
-      <a class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="custom-toggler"><i class="fas fa-bars"></i></span>
-      </a>
+        <a class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="custom-toggler"><i class="fas fa-bars"></i></span>
+        </a>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="fa-solid fa-campground"></i> Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-active" href="services.html"><i class="fa-solid fa-trowel"></i> Our Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html"><i class="fa-solid fa-people-group"></i> About Us</a>
-          <li class="nav-item" id="contact">
-            <a class="nav-link" href="contact.html"><i class="fa-solid fa-pen-to-square"></i> Free Quote</a>
-        </ul>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-campground"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-active" href="services.html"><i class="fa-solid fa-trowel"></i> Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><i class="fa-solid fa-people-group"></i> About Us</a>
+            <li class="nav-item" id="contact">
+              <a class="nav-link" href="contact.html"><i class="fa-solid fa-pen-to-square"></i> Free Quote</a>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
-<!--Body-->
-
-<body class="container-fluid p-0">
+    </nav>
+  </header>
 
   <!--Services Features-->
 
@@ -97,7 +95,9 @@
               <li>
                 <h4><small><sup><s>£50</s></sup></small> £40 / Week</h4>
               </li>
-              <li><h5>All Basic Services +</h5></li>
+              <li>
+                <h5>All Basic Services +</h5>
+              </li>
               <li>- Lawn stripes.</li>
               <li>- Lawn levelling.</li>
               <li>- Fortnightly lawn feed.</li>
@@ -167,16 +167,17 @@
 
     <div class="row pt-4 text-center px-2" id="grd-heading">
       <div class="col">
-        <h1 class="display-6">Garden Redesigns</h1>
+        <h2 class="display-6">Garden Redesigns</h2>
         <p class="lead mb-4">
           Completely transform the look and feel of your garden.
         </p>
 
-        <a data-bs-toggle="collapse" href="#design-process" aria-expanded="false" aria-controls="collapseDesignProcess">
-          <button type="button" class="btn btn-dark mt-2 mb-3">
-            <p class="lead text-center"><i class="fa-solid fa-list"></i> The 7 Steps of a Wigwam Redesign</p>
-          </button>
-        </a>
+
+        <button type="button" class="btn btn-dark mt-2 mb-3" data-bs-toggle="collapse" data-bs-target="#design-process"
+          aria-expanded="false">
+          <i class="fa-solid fa-list"></i> The 7 Steps of a Wigwam Redesign
+        </button>
+
       </div>
 
       <div class="col">
@@ -187,7 +188,7 @@
     </div>
 
     <!--The Design Process-->
-    <section id="dp">
+    <div id="dp">
 
       <div id="design-process" class="container-fluid collapse text-center">
 
@@ -251,8 +252,7 @@
               We get to work building your dream garden.
             </p>
             <div class="site-img-default rounded-3 img-fluid">
-              <img src="assets/images/stock-images/constructing.jpg"
-                alt="man constructing fence, using spirit level">
+              <img src="assets/images/stock-images/constructing.jpg" alt="man constructing fence, using spirit level">
             </div>
           </div>
           <div class="col pb-3">
@@ -281,52 +281,46 @@
             </div>
           </div>
         </div>
-        <a href="#grd-heading">
-          <button class="btn btn-dark" role="button">Back to Top <i class="fa-solid fa-chevron-up"></i></button>
-        </a>
-      </div>
-    </section>
 
-    <!--Why Choose Us?-->
-
-    <div class="container-fluid text-center pb-4 mt-4 border-top">
-      <h3 class="text-center my-3 pb-4">Why Choose Us?</h3>
-      <div class="row align-items-center pb-4 border-bottom">
-        <div class="col-lg-4">
-          <div class="wcu-photo mb-3 img-fluid">
-            <img src="assets/images/sunflower-1.jpg" alt="sunflower">
-          </div>
-          <h4>Professional</h4>
-          <p>We only work with other professionals.</p>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="wcu-photo mb-3 img-fluid">
-            <img src="assets/images/sunflower-2.jpg" alt="sunflower">
-          </div>
-          <h4>Personal</h4>
-          <p>We tailor our designs around you.</p>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="wcu-photo mb-3 img-fluid">
-            <img src="assets/images/sunflower-3.jpg" alt="sunflower">
-          </div>
-          <h4>Permaculture</h4>
-          <p>We employ <a href="https://www.permaculture.co.uk/what-is-permaculture/" target="_blank"
-              aria-label="what is permaculture?">permaculture</a> techniques on all our designs.</p>
-        </div>
+        <a href="#grd-heading" class="btn btn-dark">Back to Top <i class="fa-solid fa-chevron-up"></i></a>
 
       </div>
     </div>
+  </section>
+
+  <!--Why Choose Us?-->
+
+  <div class="container-fluid text-center pb-4 mt-4 border-top">
+    <h3 class="text-center my-3 pb-4">Why Choose Us?</h3>
+    <div class="row align-items-center pb-4 border-bottom">
+      <div class="col-lg-4">
+        <div class="wcu-photo mb-3 img-fluid">
+          <img src="assets/images/sunflower-1.jpg" alt="sunflower">
+        </div>
+        <h4>Professional</h4>
+        <p>We only work with other professionals.</p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="wcu-photo mb-3 img-fluid">
+          <img src="assets/images/sunflower-2.jpg" alt="sunflower">
+        </div>
+        <h4>Personal</h4>
+        <p>We tailor our designs around you.</p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="wcu-photo mb-3 img-fluid">
+          <img src="assets/images/sunflower-3.jpg" alt="sunflower">
+        </div>
+        <h4>Permaculture</h4>
+        <p>We employ <a href="https://www.permaculture.co.uk/what-is-permaculture/" target="_blank"
+            aria-label="what is permaculture?">permaculture</a> techniques on all our designs.</p>
+      </div>
     </div>
+  </div>
 
-
-</body>
-<!--/body-->
-
-<!--Footer-->
-<div class="container">
+  <!--Footer-->
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -337,7 +331,7 @@
       <span class="mb-3 mb-md-0 text-muted">© 2023 Wigwam Garden Solutions</span>
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <ul class="nav col-md-4 justify-content-end me-4 list-unstyled d-flex">
       <li class="ms-3"><a class="text-muted" href="https://www.facebook.com" target="_blank">
           <svg class="bi" width="24" height="24">
             <use xlink:href="#facebook">
@@ -357,8 +351,7 @@
           </svg><i class="fa-brands fa-pinterest"></i></a></li>
     </ul>
   </footer>
-</div>
-</div>
-</div>
+
+</body>
 
 </html>
