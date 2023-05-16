@@ -1,10 +1,20 @@
+/*FONT FAMILIES*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@200;300;400&display=swap');
 
+/*-----------------------------------*/
+
+/*SITE-WIDE STYLE SETTINGS*/
 html {
     scroll-behavior: smooth;
 }
 
-/* Navbar */
+.container-fluid {
+    overflow-x: hidden;
+}
+
+/*-----------------------------------*/
+
+/*NAVBAR*/
 nav {
     background-color: #2b2b2b;
 }
@@ -35,17 +45,15 @@ nav {
     color: #c7c7c7;
 }
 
-/*
--Show nav link padding only on desktop view.
--Show nav links aligned left on mobile view (collapsed state).
-*/
 @media (min-width: 992px) {
+
+    /*-Show nav-link padding only on desktop view
+      -Show nav-links aligned left on mobile view (collapsed state)*/
     nav li {
         padding-left: 50px;
         padding-right: 50px;
     }
 }
-
 
 /*Navbar Toggler*/
 .navbar-toggler {
@@ -61,103 +69,21 @@ nav {
     color: #c7c7c7;
 }
 
-/*--------------------------------------------*/
+/*-----------------------------------*/
 
+/*BODY*/
 body {
     font-family: "Lato", sans-serif;
 }
-
-.google-reviews {
-    text-decoration: none;
-    color: #474747
-}
-
-.team {
-    text-align: center;
-    padding-top: 2.5em;
-}
-
 
 ul {
     list-style: none;
     padding-left: 0;
 }
 
-/*Carousel*/
-.hp-carousel img {
-    max-height: 85vh;
-}
+/*-----------------------------------*/
 
-
-.carousel-caption {
-    background-color: rgba(71, 71, 71, 0.9);
-    max-width: fit-content;
-    padding: 1%;
-}
-
-.carousel-caption h1 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.carousel-caption p {
-    color: #fff;
-}
-
-.carousel-control-prev {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: fit-content;
-    height: 50%;
-    top: 25%;
-}
-
-
-.carousel-control-next {
-    background-color: #fff;
-    width: fit-content;
-    height: 50%;
-    top: 25%;
-}
-
-
-
-/*Why Choose Us Photos*/
-
-.wcu-photo {
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    border: none;
-    overflow: hidden;
-    display: block;
-    margin: auto;
-}
-
-.wcu-photo img {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    border: none;
-    align-self: center;
-    object-fit: cover;
-    margin: auto;
-    display: block;
-}
-
-/*---DESIGN PROCESS---*/
-
-.number {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: #474747;
-    color: #fff;
-    text-align: center;
-}
-
-/*Site Images Default Style*/
+/*IMAGES*/
 .site-img-default {
     height: 250px;
     width: 375px;
@@ -166,12 +92,10 @@ ul {
     overflow: hidden;
 }
 
-
 .site-img-default img {
     height: 250px;
     width: 375px;
 }
-
 
 /*Zoom Images Transition*/
 .zoom {
@@ -195,14 +119,161 @@ ul {
     transform: scale(1.1);
 }
 
-/*Recent Projects*/
+/*-----------------------------------*/
 
-/*Gallery*/
+/*HOME PAGE*/
+/*Google Reviews Link Styling*/
+.google-reviews {
+    text-decoration: none;
+    color: #474747
+}
+
+/*Carousel*/
+.hp-carousel img {
+    max-height: 85vh;
+}
+
+/*carousel caption styling*/
+.carousel-caption {
+    background-color: rgba(71, 71, 71, 0.9);
+    max-width: fit-content;
+    padding: 1%;
+}
+
+.carousel-caption h1 {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    color: #fff;
+    font-size: 1em;
+}
+
+/*carousel caption text media queries for responsive design*/
+@media (min-width: 576px) {
+
+    /*Small Devices*/
+    .carousel-caption h1 {
+        font-size: 1.3em;
+    }
+
+    .carousel-caption p {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /*Medium Devices*/
+    .carousel-caption h1 {
+        font-size: 1.4em;
+    }
+
+    .carousel-caption p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /*Large Devices*/
+    .carousel-caption h1 {
+        font-size: 1.5em;
+    }
+
+    .carousel-caption p {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /*Extra Large Devices*/
+    .carousel-caption h1 {
+        font-size: 1.6em;
+    }
+
+    .carousel-caption p {
+        font-size: 1.4em;
+    }
+}
+
+/*carousel controls*/
+.carousel-control-prev {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: fit-content;
+    height: 50%;
+    top: 25%;
+}
+
+.carousel-control-next {
+    background-color: #fff;
+    width: fit-content;
+    height: 50%;
+    top: 25%;
+}
+
+/*Recent Projects*/
+/*gallery link cursor styling*/
 #gallery a {
     cursor: zoom-in;
 }
 
-/*Team*/
+/*-----------------------------------*/
+
+/*OUR SERVICES PAGE*/
+
+/*Card Body Text Alignment*/
+.card-li {
+    text-align: left;
+}
+
+/*Why Choose Us Photos*/
+.wcu-photo {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.wcu-photo img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+/*---Design Process---*/
+/*Number Styling*/
+.number {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #474747;
+    color: #fff;
+    text-align: center;
+}
+
+/*-----------------------------------*/
+
+/*ABOUT US PAGE*/
+
+/*Meet The Team*/
+.team {
+    text-align: center;
+    padding-top: 2.5em;
+}
+
 .profile-pic img {
     height: 200px;
     width: 200px;
@@ -212,15 +283,17 @@ ul {
     object-fit: cover;
     margin: auto;
     display: block;
-
-
 }
-
 
 .about-us-p {
     text-indent: 2em;
 }
 
+/*-----------------------------------*/
+
+/*FOOTER*/
 footer {
     font-family: "Lato", sans-serif;
 }
+
+/*-----------------------------------*/
