@@ -15,11 +15,10 @@
 3. [Mockups](#mockups)
 4. [Design Choices](#design-choices)
 5. [UX](#ux)
-6. [UI](#ui)
-7. [Site Features](#features)
-8. [Future Features](#future-features)
-9. [Testing & Deployment](#testing--deployment)
-10. [Acknowledgements](#acknowledgements)
+6. [Site Features](#features--ui)
+7. [Future Features](#future-features)
+8. [Testing & Deployment](#testing--deployment)
+9. [Acknowledgements](#acknowledgements)
 
 
 # Introduction & Site Description
@@ -78,7 +77,7 @@ Similarly, on the 'Meet The Team' section, circular images are favoured to denot
 
 Buttons on the site are taken from Bootstrap's library and are a dark charcoal grey colour (btn-dark) which has a CSS hover effect applied, turning it to a lighter shade of grey. This tells the user that this is a call to action. 
 
-# Features
+# Features & UI
 ## Site-Wide Features
 
 ### Navigation Bar
@@ -101,9 +100,9 @@ The grey line above the footer separates its involvement from the rest of the pa
 ## Home Page Features
 
 ### Image Carousel
-The image carousel is the first thing the user will see when they visit the site. On desktop it fills the entire viewport. It's purpose is to tell the user about the company and showcase current features, promotions or recent projects through the use of photographic media and captions. The links within the captions hint to the user to explore different pages across the site to learn more information about the services on offer from Wigwam Garden Solutions.
+The image carousel is the first thing the user will see when they visit the site. On desktop it fills 85% of the viewport height. It's purpose is to tell the user about the company and showcase current features, promotions or recent projects through the use of photographic media and captions. The links within the captions hint to the user to explore different pages across the site to learn more information about the services on offer from Wigwam Garden Solutions.
 
-The image carousel is fully responsive to fit all screen sizes. It is controlled with navigation arrows (forward and back). On page-loading, it will be static. However, once the user makes contact with the navigation arrows, it will begin to autoscroll through the images left to right. 
+The image carousel is fully responsive to fit all screen sizes. It is controlled with navigation arrows (forward and back). The image carousel can be adapted to include an auto-scroll attribution. However, in this version of the site, this feature has been disabled to improve UX and accessibility.
 
 ![carousel-image-1](/documents/screenshots/carousel-1.png "Carousel Default Image")
 
@@ -275,10 +274,10 @@ The social media links open each site in a new tab respectively.
 
 
 # Future Features
-## JavaScript
+### JavaScript
 In future, the site will include JavaScript components to add animations to certain elements such as the navbar navlinks.
 
-## User Sign In & Loyalty Scheme
+### User Sign In & Loyalty Scheme
 There will also be a page where users can create an account  where they can manage their bookings and earn loyalty points from their weekly lawn maintenance to unlock discounts. 
 
 # UX
@@ -309,7 +308,7 @@ Site administrators should be able to easily update information such as the Rece
 - I want to quickly gain a sense of the company's identity and what they stand for. I want to know more about the company, its history and the people that make it up. 
 - I want to be able to view the content I want and navigate the site with ease. All the links should work and take me to where I need to go.
 - I want to see what services are on offer and if possible a rough price range.
-- I want to see images or videos of their recent work.
+- I want to see images or videos of the company's recent work.
 - I want to be able to access their social media pages from this site.
 - I want to see if I can trust this company, so reviews and testimonials must be included.
 - I want to be able to contact the company if I have any questions or want to request a call back for a quote. All contact information (telephone, email, address and social media) must be available. I also want the option to be able to send over photos of my garden to ask them for their ideas on how to improve it. 
@@ -333,82 +332,97 @@ Site administrators should be able to easily update information such as the Rece
 - I want to be able to keep the workings of this site up to date and compatible with a range of web browsers and devices by utilising version control effectively.
 
 
-## Wireframes & Site Map
+# Wireframes & Site Map
 Wireframes for this site can be accessed: [here](/documents/wireframes.pdf)
 
 A Site Map can be accessed: [here](/documents/site-map.pdf)
 
 
-# UI
-The user interface comprises of a navbar to quickly navigate from page to page without the user having to press the browser's back button.
-
-
-
 # Testing & Deployment
+
 ## Manual Testing
-Explain the testing process, fixing bugs, include screenshots/code snippets...
-Explain responsiveness and browser compatibility
-Use the W3C Validator and provide proof of validation
-Use Lighthouse to check for accessability/usability 
 
-- Expected
-Site is expected to do X when user does Y
-- Testing
-Tested site by doing Y
-- Result
-The site did not respond due to A, B, C
-or
-The site acted as expected and did Y
-- Fix
-I did Z to the code because of D
-s
-<table>
-<tr>
-<td>Feature</td>
-<td>Expectation</td>
-<td>Result</td>
-</tr>
-<tr>
-<td>Navbar</td>
-<td>When </td>
-</tr>
-</table>
+### Manual Testing of Features & User Stories: [Click Here](/documents/manual-testing-process.pdf)
 
-## Automated Testing
+### See Below for Attached Screenshot Videos of the Manual Testing process:
+#### Each screenshot video corresponds to a number listed in the manual-testing-process.pdf file.
 
-## [WC3 HTML Markup Validator](https://validator.w3.org/)
+1. [Screenshot: 1](/documents/screenshots/manual-testing-screenshots/screenshot-1.mp4)
+2. [Screenshot: 2](/documents/screenshots/manual-testing-screenshots/screenshot-2.mp4)
+3. [Screenshot: 3](/documents/screenshots/manual-testing-screenshots/screenshot-3.mp4)
+4. [Screenshot: 4](/documents/screenshots/manual-testing-screenshots/screenshot-4.mp4)
+5. [Screenshot: 5](/documents/screenshots/manual-testing-screenshots/screenshot-5.mp4)
+6. [Screenshot: 6](/documents/screenshots/manual-testing-screenshots/screenshot-6.mp4)
+7. [Screenshot: 7](/documents/screenshots/manual-testing-screenshots/screenshot-7.mp4)
+8. [Screenshot: 8](/documents/screenshots/manual-testing-screenshots/screenshot-8.mp4)
+9. [Screenshot: 9](/documents/screenshots/manual-testing-screenshots/screenshot-9.mp4)
+10. [Screenshot: 10](/documents/screenshots/manual-testing-screenshots/screenshot-10.mp4)
+11. [Screenshot: 11](/documents/screenshots/manual-testing-screenshots/screenshot-11.mp4)
+12. [Screenshot: 12](/documents/screenshots/manual-testing-screenshots/screenshot-12.mp4)
+13. [Screenshot: 13](/documents/screenshots/manual-testing-screenshots/screenshot-13.mp4)
+14. [Screenshot: 14](/documents/screenshots/manual-testing-screenshots/screenshot-14.mp4)
+15. [Screenshot: 15](/documents/screenshots/manual-testing-screenshots/screenshot-15.mp4)
+16. [Screenshot: 16](/documents/screenshots/manual-testing-screenshots/screenshot-16.mp4)
+17. [Screenshot: 17](/documents/screenshots/manual-testing-screenshots/screenshot-17.mp4)
+18. [Screenshot: 18](/documents/screenshots/manual-testing-screenshots/screenshot-18.mp4)
+19. [Screenshot: 19](/documents/screenshots/manual-testing-screenshots/screenshot-19.mp4)
+20. [Screenshot: 20](/documents/screenshots/manual-testing-screenshots/screenshot-20.mp4)
+21. [Screenshot: 21](/documents/screenshots/manual-testing-screenshots/screenshot-21.mp4)
+22. [Screenshot: 22](/documents/screenshots/manual-testing-screenshots/screenshot-22.mp4)
+23. [Screenshot: 23](/documents/screenshots/manual-testing-screenshots/screenshot-23.mp4)
+24. [Screenshot: 24](/documents/screenshots/manual-testing-screenshots/screenshot-24.mp4)
+25. [Screenshot: 25](/documents/screenshots/manual-testing-screenshots/screenshot-25.mp4)
+26. [Screenshot: 26](/documents/screenshots/manual-testing-screenshots/screenshot-26.mp4)
+27. [Screenshot: 27](/documents/screenshots/manual-testing-screenshots/screenshot-27.mp4)
+28. [Screenshot: 28](/documents/screenshots/manual-testing-screenshots/screenshot-28.mp4)
+29. [Screenshot: 29](/documents/screenshots/manual-testing-screenshots/screenshot-29.mp4)
+30. [Screenshot: 30](/documents/screenshots/manual-testing-screenshots/screenshot-30.mp4)
+31. [Screenshot: 31](/documents/screenshots/manual-testing-screenshots/screenshot-31.mp4)
 
-### index.html
+
+Use Google Lighthouse to check for accessibility/usability 
+
+
+## Validator Testing
+
+### [WC3 HTML Markup Validator](https://validator.w3.org/)
+
+#### index.html
 The Home Page (index.html) passed the W3C HTML Validation Check with: NO ERRORS.
 
 ![index.html-w3c-html-validator](/documents/screenshots/index.html-w3c-validator.png "index.html W3C HTML Validator")
 
 
-### services.html
+#### services.html
 The Our Services Page (services.html) passed the W3C HTML Validation Check with: NO ERRORS.
 
 ![services.html-w3c-html-validator](/documents/screenshots/services.html-w3c-validator.png "services.html W3C HTML Validator")
 
-### about.html
+#### about.html
 The About Us Page (about.html) passed the W3C HTML Validation Check with: NO ERRORS.
 
 ![about.html-w3c-html-validator](/documents/screenshots/about.html-w3c-validator.png "about.html W3C HTML Validator")
 
-### contact.html
+#### contact.html
 The Free Quote / Contact Us Page (contact.html) passed the W3C HTML Validation Check with: NO ERRORS.
 
 ![contact.html-w3c-html-validator](/documents/screenshots/contact.html-w3c-validator.png "contact.html W3C HTML Validator")
 
-## [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
+### [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-### style.css
+#### style.css
 
 The stylesheet (style.css) passed the W3C CSS Jigsaw Validation Check with: NO ERRORS.
 
 ![style.css-jigsaw-validator](/documents/screenshots/style.css-jigsaw-validator.png "style.css W3C CSS Jigsaw Validator")
 
+## Automated Testing
 
-# Bugs
+### [Selenium.dev]()
+
+
+# Known Bugs
+### This section lists any known bugs and their fixes. It provides documentation of the troubleshooting procedures.
 
 ## 1) Bug Found: 11/05/2023 18:30pm
 
@@ -423,7 +437,7 @@ The CSS applied to the image was:
 
 ### Bug Fixed: 12/05/2023 11:45am
 
-The bug was fixed by adding a new style rule to the CSS targeting the image within the container. This made sure any image with this style rule applied, matched the size of the continer (div).
+The bug was fixed by adding a new style rule to the CSS targeting the image within the container. This made sure any image with this style rule applied, matched the size of the container (div).
 
 The style rule was updated to include this:
 
@@ -509,13 +523,15 @@ This resulted in the bug being fixed:
 
 ![recent-projects-gallery-img-bug-fixed](/documents/screenshots/bugs/recent-projects-gallery-bug-fixed.png "Recent Projects Gallery Images Bug Fixed")
 
-# Automated Testing
+## 8) Bug Found: 17/05/2023 09:50am
 
-Tested on selenium.dev
+The bug found was that the form submit button does not send the form to a database.
+There is also no 'Successfully Sent' message presented to the user once the button is clicked which negatively affects UX and accessibility.
 
-Tested on W3C HTML Validator
+### ! THIS BUG REMAINS TO BE FIXED !
 
-Tested on Jigsaw CSS Validator
+This bug has not yet been fixed as a database has not yet been set up to serve the back-end workings of the form and data-handling. 
+
 
 # Acknowledgements
 ## This website was built using [Bootstrap](https://getbootstrap.com/) v5.3.
