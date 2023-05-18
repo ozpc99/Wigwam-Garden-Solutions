@@ -11,18 +11,23 @@
 # Contents
 
 1. [Introduction & Site Description](#introduction--site-description) 
-2. [Instructions for running the code in Gitpod]()
+2. [Instructions](#instructions)
 3. [Mockups](#mockups)
 4. [Design Choices](#design-choices)
-5. [UX](#ux)
-6. [Site Features](#features--ui)
-7. [Future Features](#future-features)
-8. [Testing & Deployment](#testing--deployment)
-9. [Acknowledgements](#acknowledgements)
+5. [Features & UI](#features--ui)
+6. [Future Features](#future-features)
+7. [UX](#ux)
+8. [Wireframes & Site Map](#wireframes--site-map)
+9. [Testing](#testing)
+10. [Deployment](#deployment)
+11. [Known Bugs](#known-bugs)
+12. [Acknowledgements](#acknowledgements)
 
 
 # Introduction & Site Description
-This website is for Wigwam Garden Solutions, a garden design and landscaping company. The site... 
+This website is for 'Wigwam Garden Solutions': a garden design and landscaping company.
+
+The site provides a space for the company to advertise its services and build its customer base by showcasing recent projects, testimonials, a list of services it offers and its brand identity. 
 
 ### Disclaimer
 The example company, organisation, products, email addresses, contact information, logos, social media links, people, places and events herein are fictitious.
@@ -32,7 +37,17 @@ The example is for the sole purpose of showcasing my project for the User Centri
 
 
 # Instructions
-Instructions for running code in Gitpod
+## Instructions for running the code in Gitpod & Viewing a Live Preview: 
+
+- Navigate to the GitHub Repository. Click: [Here](https://github.com/ozpc99/Wigwam-Garden-Solutions)
+- Click the green button: 'Gitpod'
+- Sign in to Gitpod with a GitHub account.
+- Create a new workspace.
+- To view a live preview: 
+    - Navigate to the command terminal.
+    - Type: 'python -m http.server 8000' and press the enter key.
+    - Click: 'Open Preview'
+    - To view preview in a new browser tab, click the box with the arrow in the top right corner (Open in browser).
 
 
 # Mockups
@@ -73,7 +88,7 @@ The navlinks have padding applied to space them equidistant from one another and
 
 The site's images are displayed in rounded rectangles using Bootstrap's 'rounded-3' class attribute. This makes it easier on the eyes and more aesthetically pleasing than sharp corners. The images on the site are all of uniform proportions and this creates a consistent theme. 
 The exceptions to this is on the 'Why Choose Us?' section where circular images are used instead of rounded rectangles. This is to denote focal points of interest. Each photo serves to represent one bullet point for reasons why the user should choose this company. 
-Similarly, on the 'Meet The Team' section, circular images are favoured to denote profile pictures for each member of the team. 
+Similarly, on the 'Meet The Team' section, circular images are the favoured choice to denote profile pictures for each member of the team. 
 
 Buttons on the site are taken from Bootstrap's library and are a dark charcoal grey colour (btn-dark) which has a CSS hover effect applied, turning it to a lighter shade of grey. This tells the user that this is a call to action. 
 
@@ -93,6 +108,10 @@ Additionally, the current page the user is viewing is indicated in the navbar by
 
 The footer is positioned at the bottom of each site page. Its function is to contain copyright information and provide social media links to Facebook, Instagram and Pinterest.
 
+<i> NB- There is a bug with the social media links. 
+The links only take the user to the home page of each social media site. This is because a profile page for the company has not yet been set up. In future, the links will take the user to the company's profile pages as intended.
+See [Known Bugs](#known-bugs) section for more info.</i>
+
 The grey line above the footer separates its involvement from the rest of the page and emphasises the end of the scrollable content.
 
 ![footer](/documents/screenshots/footer.png "Footer")
@@ -102,7 +121,7 @@ The grey line above the footer separates its involvement from the rest of the pa
 ### Image Carousel
 The image carousel is the first thing the user will see when they visit the site. On desktop it fills 85% of the viewport height. It's purpose is to tell the user about the company and showcase current features, promotions or recent projects through the use of photographic media and captions. The links within the captions hint to the user to explore different pages across the site to learn more information about the services on offer from Wigwam Garden Solutions.
 
-The image carousel is fully responsive to fit all screen sizes. It is controlled with navigation arrows (forward and back). The image carousel can be adapted to include an auto-scroll attribution. However, in this version of the site, this feature has been disabled to improve UX and accessibility.
+The image carousel is fully responsive to fit all screen sizes. It is controlled with navigation arrows (forward and back) or with the navigation indicators. The image carousel can be adapted to include an auto-scroll attribution. However, in this version of the site, this feature has been disabled to improve UX, accessibility and user control.
 
 ![carousel-image-1](/documents/screenshots/carousel-1.png "Carousel Default Image")
 
@@ -118,9 +137,9 @@ The images are fully responsive, showing as a 3x4 Bootstrap grid on desktop and 
 
 #### Mobile View
 
-![recent-projects-gallery-mobile-view](/documents/screenshots/"Recent Projects Gallery Mobile View")
+![recent-projects-gallery-mobile-view](/documents/screenshots/recent-projects-mobile.png "Recent Projects Gallery Mobile View")
 
-The images all have a CSS applied zoom transition on hover as well as the cursor which changes from a pointer to a zoom-in style cursor to encourage the user to click on them.
+The images all have a CSS applied zoom transition on hover as well as the cursor which changes from a pointer to a magnifying glass cursor to encourage the user to click on them.
 
 #### See The CSS Transition in Action:
 
@@ -145,14 +164,20 @@ The iframe is fully responsive and allows the user to drag, zoom and open the ma
 ![map-iframe](/documents/screenshots/map-iframe.png "Areas We Cover Google Maps iframe")
 
 ### Testimonials
-The testimonials section shows the user the trustability of the company.
+The testimonials section shows the user the trustworthiness of the company.
 
 There is a link to Google Reviews showing a 4.5 Star rating.
+
+<i> NB- There is a bug with this link. 
+The link only takes the user to the google.com homepage instead of the company's profile on Google Reviews.
+This is because a Google Reviews profile has not yet been set up for the company.
+In future, the link will take the user to the company's Google Reviews profile as intended.
+See [Known Bugs](#known-bugs) section for more info.</i>
 
 ![testimonials](/documents/screenshots/testimonials.png "Testimonials")
 
 ## 'Our Services' Page Features
-All the images on the services page have Bootstrap's 'rounded-3' class attributed to them. They are all uniform in size in keeping with the site's theme.
+All the images on the Our Services page have Bootstrap's 'rounded-3' class attributed to them. They are all uniform in size in keeping with the site's theme.
 The images are displayed in a Bootstrap grid with three rows of two columns on desktop and one column with six rows on mobile.
 
 #### Desktop View
@@ -167,14 +192,12 @@ The images are displayed in a Bootstrap grid with three rows of two columns on d
 
 ![lawn-maintenance-pricing-plans](/documents/screenshots/lawn-maintenance.png "Lawn Maintenance Pricing Plans")
 
-The Weekly Lawn Maintenance feature is the main feature of the services page.
+The Weekly Lawn Maintenance feature is the main feature of the Our Services page.
 The user is asked a rhetorical question: 'Garden becoming a bit of a jungle?' to plant the idea that they can fix the situation by purchasing one of the service plans. 
 
 The pricing is displayed using Bootstrap cards. This tells the user that these are products & services up for purchase and allows them to compare side by side, the included services of each plan to decide which is best for them. 
 
-The 'Pro' pricing is displayed with a dark background. This is to make it stand out and convey to the user that this is a premium service. 
-
-The 'Pro' pricing features the price in small, strikethrough text next to regular text (<sup> <s>£50</s> </sup> £40). This shows a limited time offer and urges the user to get in touch today to get a good deal on their service plan.
+The 'Pro' pricing is displayed with a dark background. This is to make it stand out and convey to the user that this is a premium service. It also features the price in small, strikethrough text next to regular text (<sup> <s>£50</s> </sup> £40). This shows a limited time offer and urges the user to get in touch today to get a good deal on their service plan.
 
 
 ### Garden Redesigns
@@ -182,8 +205,8 @@ The 'Pro' pricing features the price in small, strikethrough text next to regula
 ![garden-redesigns](/documents/screenshots/garden-redesigns.png "Garden Redesigns")
 
 Below the list of services, is the Garden Redesigns section.
-This is the area of expertise that Wigwam specialise in and are reknowned for. 
-This section is placed below the list of services and is separated using a top-border to serve as a horizontal rule. This is because it is a specialist service reserved for customers who are looking for more than simple odd-jobs and light construction. It is for complete garden makeovers and big jobs.
+This is the area of expertise that Wigwam specialise in and are renowned for. 
+This section is placed below the list of services and is separated using a top-border to serve as a horizontal rule. This is because it is a specialist service reserved for customers who are looking for more than simple odd-jobs and light construction. It is for complete garden makeovers.
 
 
 This section utilises a Bootstrap collapse to hide large amounts of information. This streamlines the look of the page and improves UX. 
@@ -198,24 +221,22 @@ By default, when the page loads, this section is hidden. When the user presses t
 ![redesigns-by-wigwam](/documents/screenshots/wigwam-redesigns.png "Redesigns by Wigwam")
 
 This section contains the seven steps of a Wigwam garden redesign.
-The steps are layed out using a Bootstrap grid system comprised of rows and columns. 
+The steps are laid out using a Bootstrap grid system comprised of rows and columns. 
 On desktop view, there are two columns and two items per row. Step 7-Completion, is an exception and is positioned in the center of the screen to signal to the user that they have reached the end of this section. There are four rows in total. 
 
 On mobile devices, this shrinks to one column or one item per row stacked on top of one another.
 
 The items are read left to right, top to bottom similar to a comic strip and are intuitive, easy to follow and easy to digest.
-Text content is minimal so as not to bore the user with unnecessary detail. 
+Text content is minimal to quickly get key points across to the user. 
 
 Each step is numbered 1-7 with a circular styled number. These act like bullet points and provide a consistent style and a point of reference for the user.
 
-Again, like the rest of the site, the images are styled with a CSS rollover zoom transition and have the Bootstrap 'rounded-3' attribute applied for consistency. 
+Again, like the rest of the site, the images have the Bootstrap 'rounded-3' attribute applied for consistency. 
 
-At the end of the section, there is a 'Back to Top' button which when pressed automatically scrolls back to the top of the section without the user having to manually scroll all the way back up.
+At the end of the section there is a 'Back to Top' button which when pressed; automatically scrolls back to the top of the section without the user having to manually scroll all the way back up.
 Having this button improves UX and adds interactivity and user control to the site.
 
-In future, the button that triggers the collapse will include JavaScript components to make it more obvious to the user that this is a collapsable section. An example of this might include a caret-right or chevron-right icon on or next to the button that rotates when clicked becoming something resembling a caret-down or chevron-down icon. 
-
-
+In future, the button that triggers the collapse will include JavaScript components to make it more obvious to the user that this is a collapsible section. An example of this might include a caret-right or chevron-right icon on or next to the button that rotates when clicked becoming something resembling a caret-down or chevron-down icon. 
 
 ### Why Choose Us?
 
@@ -247,9 +268,16 @@ The 'Meet The Team' section tells the user more about the team behind the compan
 
 The button to Nicole's pinterest portfolio allows users to view her previous work and saved pins. It also provides inspiration to customers about how they would like their garden to look. 
 
+<i> NB- There is a bug with this button. 
+The button only takes the user to the pinterest.co.uk home page. This is because a pinterest profile has not yet been set up for the company or for Nicole.
+In future, the link will take the user to Nicole's pinterest profile as intended.
+See [Known Bugs](#known-bugs) section for more info.</i>
+
 ## Free Quote Page Features
 
-![free-quote-page](/documents/screenshots/free-quote.png "Free Quote Page")
+![free-quote-page](/documents/screenshots/quote.png "Free Quote Page")
+
+The images on the Free Quote page supplement the context of the contact form. There is the company's logo, an image of a man with a tool box and an image of a man holding a plant. The images only display on desktop view and hide when viewed on mobile, this is to remove unnecessary content from smaller screen sizes for better UX and optimisation. 
 
 ### Form
 
@@ -261,8 +289,13 @@ They can also upload multiple photos of their garden for Wigwam to better see th
 
 ### Contact Info
 At the bottom of the page is also all the company's contact info. This is displayed in a single row of four columns on desktop, and a single column of four rows on mobile. 
-The email link is left with default hyperlink styling to tell the user that this is a link. When clicked, opens the user's default email client to send an email to Wigwam's email address. 
+The email link is left with default hyperlink styling to tell the user that this is a link. When clicked, it opens the user's default email client to send an email to Wigwam's email address. 
 The social media links open each site in a new tab respectively. 
+
+<i> NB- There is a bug with the social media links. 
+The links only take the user to the home page of each social media site. This is because the social media profiles have not yet been set up for the company.
+In future, the links will take the user to the company's profile page on each social media site as intended.
+See [Known Bugs](#known-bugs) section for more info.</i>
 
 #### Desktop View:
 
@@ -275,7 +308,10 @@ The social media links open each site in a new tab respectively.
 
 # Future Features
 ### JavaScript
-In future, the site will include JavaScript components to add animations to certain elements such as the navbar navlinks.
+In future, the site will include JavaScript components to add animations to certain elements such as the navbar navlinks. There will also be a JavaScript animated caret icon next to the 'The 7 Steps of a Wigwam Redesign' button to make it more obvious to the user that this triggers a collapsible section. 
+
+### Weekly Lawn Maintenance Purchasing
+The Bootstrap cards containing the Weekly Lawn Maintenance pricing will contain a 'Sign up Now' button to allow users to purchase a plan without having to fill in the contact form or get in touch by other means. The site administrator will be able to manage bookings and alter this feature so users are added to a waiting list and only billed after the work has been done should demand for the service be high. 
 
 ### User Sign In & Loyalty Scheme
 There will also be a page where users can create an account  where they can manage their bookings and earn loyalty points from their weekly lawn maintenance to unlock discounts. 
@@ -283,8 +319,8 @@ There will also be a page where users can create an account  where they can mana
 # UX
 ## Site Goals
 
-The goal of the 'Wigwam Garden Solutions' website is to showcase the company's recent work as its portfolio and to increase the customer base.
-It should tell the user about the company, its values and what services they offer.
+The goal of the 'Wigwam Garden Solutions' website is to showcase the company's recent work as its portfolio and to advertise its services to increase its customer base.
+It should tell the user about the company, its values and the exact services they offer.
 
 The company is primarily focused on garden design so the site should have a large section dedicated to explaining the process the user can expect should they enquire about this service.
 
@@ -297,7 +333,7 @@ The site should be easy to navigate, simple in its design and aesthetically plea
 The site should look good both on desktop and on mobile devices. 
 The navbar should be responsive and should collapse when viewed on mobile devices.
 
-The site should have a consistent colour scheme. Text content must use fonts that are consistent across all pages. Images and icons must be styled consistently.
+The site should have a consistent colour scheme. Text content must use fonts that are consistent with their content (paragraphs or headings) across all pages. Images and icons must be styled consistently.
 
 Site administrators should be able to easily update information such as the Recent Projects gallery with new images or videos and keep the content up to date and relevant. 
 
@@ -307,7 +343,7 @@ Site administrators should be able to easily update information such as the Rece
 ### As a Customer:
 - I want to quickly gain a sense of the company's identity and what they stand for. I want to know more about the company, its history and the people that make it up. 
 - I want to be able to view the content I want and navigate the site with ease. All the links should work and take me to where I need to go.
-- I want to see what services are on offer and if possible a rough price range.
+- I want to see what services are on offer and if possible, a rough price range.
 - I want to see images or videos of the company's recent work.
 - I want to be able to access their social media pages from this site.
 - I want to see if I can trust this company, so reviews and testimonials must be included.
@@ -327,18 +363,18 @@ Site administrators should be able to easily update information such as the Rece
 - I also want to be able to easily update the services on offer if the company decide to specialise in other areas. 
 - I want to be able to easily update the awards the company has won if they are nominated for other prizes in the future.
 - I also want to be able to easily update the Meet The Team section in case the company decides to hire more staff.
-- I want contact information to be accessible and clearly displayed so customers can easily get in touch regarding any questions or if they would like to request a quote. 
+- I want contact information to be accessible and clearly displayed so customers can easily get in touch regarding any questions or if they would like to request a quote. I also want to be able to easy update this information should the company move offices or change their phone number for example.
 - I want to be able to collect data from the form into a database which emails each request to the company to ask for a quote or call back. I want this data to be managed securely and in line with GDPR data protection regulations.  
 - I want to be able to keep the workings of this site up to date and compatible with a range of web browsers and devices by utilising version control effectively.
 
 
 # Wireframes & Site Map
-Wireframes for this site can be accessed: [here](/documents/wireframes.pdf)
+## Wireframes for this site can be accessed: [here](/documents/wireframes.pdf)
 
-A Site Map can be accessed: [here](/documents/site-map.pdf)
+## A Site Map can be accessed: [here](/documents/site-map.pdf)
 
 
-# Testing & Deployment
+# Testing
 
 ## Manual Testing
 
@@ -380,9 +416,6 @@ A Site Map can be accessed: [here](/documents/site-map.pdf)
 31. [Screenshot: 31](/documents/screenshots/manual-testing-screenshots/screenshot-31.mp4)
 
 
-Use Google Lighthouse to check for accessibility/usability 
-
-
 ## Validator Testing
 
 ### [WC3 HTML Markup Validator](https://validator.w3.org/)
@@ -416,13 +449,28 @@ The stylesheet (style.css) passed the W3C CSS Jigsaw Validation Check with: NO E
 
 ![style.css-jigsaw-validator](/documents/screenshots/style.css-jigsaw-validator.png "style.css W3C CSS Jigsaw Validator")
 
-## Automated Testing
+# Deployment
 
-### [Selenium.dev]()
+This site was deployed to GitHub. A link to the repository can be accessed: [Here](https://github.com/ozpc99/Wigwam-Garden-Solutions).
+
+### Steps Taken to Deploy to GitHub.
+
+- Download GitHub for Desktop.
+- Launch GitHub for Desktop and sign in with a GitHub account.
+- Click: 'File' > 'Add Local Repository.' (Ctrl+O) and upload root directory folder.
+- Click 'Fetch Origin'. 
+    - The software will notify you of any changes made to files since last push, if initial commit; no changes will show.
+- Give a summary and description of changes made since last commit.
+- Click: 'Commit to Main'.
+    - GitHub will organise the files.
+- Click: 'Push Origin'
+    - Github Desktop will push the files to GitHub. 
+
 
 
 # Known Bugs
-### This section lists any known bugs and their fixes. It provides documentation of the troubleshooting procedures.
+### This section lists any known bugs and their fixes. 
+### It provides documentation of the troubleshooting process.
 
 ## 1) Bug Found: 11/05/2023 18:30pm
 
@@ -453,7 +501,7 @@ The bug found was that the image (moss-min.jpg) was ever so slightly, not aligne
 
 ![bug-2](/documents/screenshots/bugs/bug-2.png)
 
-After fault-finding this didn't appear to be an issue with the CSS but rather the HTML.
+After fault-finding this didn't appear to be an issue with the CSS but rather the HTML and a Bootstrap class attribute in the wrong place.
 The HTML was:
 
 166 | `<section class="container-fluid pb-4 my-3 border-top" id="see-more">`
@@ -489,7 +537,7 @@ The bug found was that the page did not fit the screen responsively and caused a
 
 ### Bug Fixed: 16/05/2023 10:30am
 
-The bug was fixed by adding the `"container-fluid p-0"` class attribute to the `<body>` and `<html>` tags of each page. This results in a responsive webpage without any white space (padding) added by Bootstrap.
+The bug was fixed by adding the `"container-fluid p-0"` class attribute to the `<html>` tag on each page. This results in a responsive webpage without any white space (padding) added by Bootstrap.
 The horizontal scroll bar was removed by adding a CSS style rule to the `"container-fluid"` class attribute: `"overflow-x: hidden"`.
 
 The website is now fully responsive across a range of viewports including mobile devices.
@@ -559,7 +607,7 @@ They are listed below in alphabetical order:
 - [user](https://fontawesome.com/icons/user?f=classic&s=solid)
 
 
-## The fonts used on this site are taken from [Google Fonts](https://fonts.google.com/). 
+## The fonts used on this site were taken from [Google Fonts](https://fonts.google.com/). 
 They are:
 - [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans?query=nunito+sans) (Designed by Vernon Adams, Jacques Le Bailly, Manvel Shmavonyan, Alexei Vanyashin)
 - [Lato](https://fonts.google.com/specimen/Lato?query=lato) (Designed by Łukasz Dziedzic)
